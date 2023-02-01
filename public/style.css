@@ -1,0 +1,567 @@
+/*----------------Général---------------*/
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+}
+
+.erreur {
+	color: #e1755e
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+h1, h2, .insc {
+  text-align: center;
+  margin-bottom: 10px;
+}
+h3 {
+  text-align: center;
+  margin-bottom: inherit;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #a2cdb8;
+}
+h6 {
+  text-align: center;
+  margin-top: inherit;
+}
+/*--------------------------------------*/
+
+/*----------------Index-----------------*/
+.index-contenu {
+  height: 60.5vh;
+}
+.bienvenue {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: #fff 1px 2px 3px;
+  font: 2.5rem Raleway, sans-serif;
+  color: #a2cdb8;
+}
+.presentation {
+  width: 35%;
+  height: 40%;
+  font: 1.5rem Raleway, sans-serif;
+  text-align: center;
+  text-shadow: #e1755e 1px 2px 3px;
+  margin-top: 5%;
+  margin-left: 15%;
+  display: inline-block;
+}
+.infosProfil {
+  width: 25%;
+  height: 50%;
+  padding: 20px;
+  margin-left: 12%;
+  border-radius: 45px;
+  display: inline-block;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+.imageProfil {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 60px;
+}
+.presentation {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 45px;
+  height: max-content;
+  padding: 20px;
+}
+/*--------------------------------------*/
+
+/*Bouton Algorithme des mariages stables*/
+#algoM {
+  margin: auto;
+  margin-top: 15px;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#algoM a {
+  text-decoration: none;
+  color: #a2cdb8;
+}
+/*--------------------------------------*/
+
+/*-----------Page de connexion----------*/
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 450px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+}
+.login-box h2 {
+  font-size: 32px;
+  margin: 0 0 50px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.login-box .user-box {
+  position: relative;
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  margin-top: 20px;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .4s;
+}
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #a2cdb8;
+  font-size: 14px;
+}
+.login-box form .submit {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 10px;
+  margin-left: 300px;
+  letter-spacing: 3px;
+}
+.login-box .submit:hover {
+  background: aliceblue;
+  color: #000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #95e5f3,
+  0 0 15px #95e5f3,
+  0 0 25px #95e5f3,
+  0 0 35px #fff;
+}
+/*--------------------------------------*/
+
+/*-----------Page des profils-----------*/
+.login-box2 {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  width: 850px;
+  height: 780px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+.login-box2 h2 {
+  font-size: 32px;
+  margin: 0 0 20px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.login-box2 .user-box {
+  position: relative;
+}
+.login-box2 .user-box input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box2 .user-box label {
+  position: absolute;
+  margin-top: 10px;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .4s;
+}
+.login-box2 .user-box input:focus ~ label,
+.login-box2 .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #a2cdb8;
+  font-size: 14px;
+}
+.login-box2 form .submit {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .3s;
+  margin-top: 5px;
+  margin-left: 400px;
+  letter-spacing: 2px;
+}
+.login-box2 .submit:hover {
+  background: #a2cdb8;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #e1755e,
+  0 0 25px #e1755e,
+  0 0 50px #e1755e,
+  0 0 100px #e1755e;
+}
+.maj {
+  width: 100%;
+  font-size: 9px;
+  text-align: left;
+}
+.photo {
+  width: 80px;
+  height: 80px;
+  margin-left: 85%;
+  display: inline;
+}
+/*--------------------------------------*/
+
+/*-Différents tableaux présents du site-*/
+th, td {
+  padding: 5px;
+  border: 0.5px solid black;
+  text-align: center;
+}
+tr {
+  border: thin solid black;
+}
+.etudiant-ligne:nth-child(even) {
+  background: rgba(0, 0, 0, 0.2);
+}
+table {
+  position: relative;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-collapse: collapse;
+  color: #fff;
+}
+.tableau {
+  width: 95%;
+  height: 65vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+.tableau2 {
+  width: 65%;
+  height: 41vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+.tab-options {
+  width: 33.1%;
+  height: 25vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: inline-block;
+}
+.options {
+  padding: 5px;
+}
+.buttons {
+  margin-left: 85%;
+}
+/*--------------------------------------*/
+
+/*--------------Messagerie--------------*/
+.nonlu {
+  color: #fff;
+  background-color: #aa5442;
+}
+.lu {
+	background-color: #bf7262;
+}
+.mailBox {
+	width: 40%;
+  height: 600px;
+	margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+.mailBox tr {
+  background: rgba(0, 0, 0, 0.1);
+}
+.mailBoxButtons {
+  margin-bottom: 20px;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  padding: 10px;
+  border-color: white;
+  box-shadow: 0px 3px 3px grey;
+}
+.info {
+  text-align: center;
+  width: 8%;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border-color: white;
+  box-shadow: 0px 3px 3px grey;
+}
+.info > a:link, .info > a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+#editbuttons {
+	text-align: center;
+}
+#newMsg {
+	margin-top: 60px;
+	margin-left : 50px;
+	text-decoration: none;
+	background-color: white;
+	border-radius:20px;
+	color: black;
+	padding: 10px;
+	box-shadow: 0px 3px 3px grey;
+}
+#msg {
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+  margin-top: 5%;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 2px #000;
+  background: rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 2px;
+}
+#tete {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding: 5px;
+  grid-area: 1 / 1 / 2 / 6;
+  text-align: right;
+}
+#reciever {
+  margin: 4px;
+  border-radius:10px;
+  grid-area: 2 / 1 / 3 / 6;
+}
+#subject {
+  margin: 4px;
+  border-radius:10px;
+  grid-area: 3 / 1 / 4 / 6;
+}
+#body {
+  margin: 4px;
+  border-radius:10px;
+  grid-area: 4 / 1 / 8 / 6;
+}
+#submit {
+  width: 80px;
+  text-decoration: none;
+	border-radius:5px;
+  border: 1px solid black;
+	color: rgb(0, 0, 0);
+	padding: 10px;
+  margin: 10px;
+  grid-area: 8 / 1 / 9 / 2;
+}
+#message {
+  margin: 10px;
+  color: black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 1px 1px rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 2px;
+}
+#date {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: left;
+  box-shadow: 0px 1px black;
+}
+#exit {
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  padding: 5px;
+  grid-area: 1 / 3 / 2 / 6;
+  text-align: right;
+  box-shadow: 0px 1px black;
+}
+#sender {
+  margin: 4px;
+  font-size: larger;
+  font-weight:800;
+  grid-area: 2 / 1 / 3 / 6;
+  height: 40px;
+  text-align: left;
+  padding: 3px;
+  border-bottom: 1px solid rgb(56, 56, 56);
+  width: max-content;
+}
+#destinataire {
+  margin: 4px;
+  color: rgb(56, 56, 56);
+  font-size: small;
+  height: 40px;
+  grid-area: 3 / 1 / 4 / 6;
+  text-align: left;
+  padding: 3px;
+}
+#object {
+  color: rgb(0, 0, 0);
+  margin: 4px;
+  font-weight: 900;
+  font-size: 35px;
+  text-decoration: underline;
+  border-radius:10px;
+  grid-area: 4 / 1 / 5 / 6;
+  padding: 3px;
+}
+#cekiladit {
+  padding: 3px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 4px;
+  border-radius:10px;
+  grid-area: 5 / 1 / 9 / 6;
+  text-align: left;
+}
+#bloquer, #signaler {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 5px;
+  margin: 5px;
+  width:fit-content ;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-left: 5%;
+  
+}
+
+#bloquer:hover, #signaler:hover {
+  background-color: #b9b9b9;
+} 
+
+/*--------------------------------------*/
+
+/*-----------------NavBar---------------*/
+.menu {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+.menu-items {
+  list-style-type: none;
+}
+.items {
+  padding: 6px 30px;
+  display: inline-block;
+}
+.links {
+  text-decoration: none;
+  --fill-color: #a2cdb8;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font: 700 2rem Raleway, sans-serif;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+  color: transparent;
+  background-clip: text;
+  transition: 0.5s linear;
+}
+.links:hover {
+  background-size: 100%;
+}
+/*--------------------------------------*/
+
+/*-------------Pied de Page-------------*/
+footer {
+  margin-top: 1%;
+  color: white;
+  text-align: center;
+}
+.footer-middle, .footer-bottom {
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 3px;
+  padding-bottom: 1px;
+  color: white;
+}
+.colonne {
+  display: inline-block;
+  margin: 0 5% 0 5%;
+}
+.text {
+  text-align: center;
+}
+.logo {
+  width: 50px;
+}
+.banniere {
+  width: 250px;
+}
+#lien {
+  color: #fff;
+  text-decoration: none;
+}
+/*--------------------------------------*/
